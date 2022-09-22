@@ -1,8 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/c/Users/Brellin/Programming/Python/Sorting'
-let g:netrw_dirhist_2='/c/Users/Brellin/Programming/Python/sorting/src/iterative_sorting'
-let g:netrw_dirhist_3='/c/Users/Brellin'
-let g:netrw_dirhist_4='/c/Users/Brellin/.vue-cli-ui'
-let g:netrw_dirhist_5='/c'
-let g:netrw_dirhist_6='/etc/profile.d'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/'
+let g:netrw_dirhist_2='/etc'
+let g:netrw_dirhist_1='/etc/profile.d'

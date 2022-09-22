@@ -21,6 +21,7 @@ set tabstop=2
 set shiftwidth=0
 set expandtab
 set autoindent
+set backspace=indent,eol,start
 syntax on
 
 "Mode Settings
