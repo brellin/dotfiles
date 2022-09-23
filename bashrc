@@ -75,6 +75,8 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lal="ls -al"
 alias rc='source ~/.bashrc'
+alias sapps='source /home/umstead/virtualenv/bin/activate'
+alias dapps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/test.toml python3 -m apps'
 
 # Functions
 cm() {

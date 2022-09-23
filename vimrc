@@ -14,6 +14,8 @@ Plug 'junegunn/fzf'
 Plug 'wakatime/vim-wakatime'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'leafOfTree/vim-vue-plugin'
+Plug 'tell-k/vim-autopep8'
+Plug 'TroyFletcher/vim-colors-synthwave'
 call plug#end()
 
 "Settings
@@ -23,6 +25,7 @@ set expandtab
 set autoindent
 set backspace=indent,eol,start
 syntax on
+colorscheme synthwave
 
 "Mode Settings
 let &t_SI = "\<Esc>[5 q" "SI = INSERT mode
