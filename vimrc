@@ -6,7 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'leafgarland/typescript-vim'

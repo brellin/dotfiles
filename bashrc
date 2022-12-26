@@ -100,5 +100,8 @@ branchup(){
 	git checkout -b $1
 	git push -u origin $1
 }
+_pgb() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 
-export PS1="\[\e[1;32m\u@\h\] \[\e[0;33m\w\e[m\]\n\e[0;36m$\e[m\[$(tput setaf 6)\] "
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(_pgb)\[\033[00m\]$ "
