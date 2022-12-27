@@ -8,6 +8,10 @@
     ~/.vimrc: vimrc
     ~/.profile: profile
     ~/.bashrc: bashrc
+    ~/.vim:
+      glob: true
+      path: vim
+      exclude: [plugged, autoload, configs/local.vim]
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
