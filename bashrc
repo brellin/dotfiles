@@ -71,6 +71,7 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
 fi
 
 # Aliases
+alias ls="ls --color=auto"
 alias la="ls -a"
 alias ll="ls -l"
 alias lal="ls -al"
