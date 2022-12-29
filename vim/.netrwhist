@@ -1,12 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/home/brellin/development/utils/src'
-let g:netrw_dirhist_1='/home/brellin/development/utils'
-let g:netrw_dirhist_0='/home/brellin/development/utils/assets'
-let g:netrw_dirhist_9='/home/brellin/development/utils'
-let g:netrw_dirhist_8='/home/brellin/development'
-let g:netrw_dirhist_7='/home/brellin/work/Apps'
-let g:netrw_dirhist_6='/home/brellin/work'
-let g:netrw_dirhist_5='/home/brellin/gitea/mysql/gitea'
-let g:netrw_dirhist_4='/home/brellin/gitea/mysql'
-let g:netrw_dirhist_3='/home/brellin/gitea'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/c/Users/Brellin/.vim'

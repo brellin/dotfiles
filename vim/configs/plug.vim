@@ -10,13 +10,12 @@ Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'leafgarland/typescript-vim'
-Plug 'junegunn/fzf'
 Plug 'wakatime/vim-wakatime'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'tell-k/vim-autopep8'
 Plug 'TroyFletcher/vim-colors-synthwave'
-Plug 'APZelos/blamer.nvim'
+Plug 'zivyangll/git-blame.vim'
 call plug#end()
 
 " set theme

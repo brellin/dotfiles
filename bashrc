@@ -40,19 +40,6 @@ fi
 #  fi
 #fi
 
-# sudo hint
-if [ ! -e "$HOME/.sudo_as_admin_successful" ] && [ ! -e "$HOME/.hushlogin" ] ; then
-    case " $(groups) " in *\ admin\ *|*\ sudo\ *)
-    if [ -x /usr/bin/sudo ]; then
-	cat <<-EOF
-	To run a command as administrator (user "root"), use "sudo <command>".
-	See "man sudo_root" for details.
-	
-	EOF
-    fi
-    esac
-fi
-
 # if the command-not-found package is installed, use it
 if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-not-found ]; then
 	function command_not_found_handle {
@@ -105,4 +92,4 @@ _pgb() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(_pgb)\[\033[00m\]$ "
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(_pgb)\[\033[00m\] $ "

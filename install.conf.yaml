@@ -5,13 +5,16 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.profile: profile
-    ~/.bashrc: bashrc
+    ~/.vimrc: 
+      path: vimrc
+    ~/.profile: 
+      path: profile
+    ~/.bashrc: 
+      path: bashrc
     ~/.vim:
       glob: true
       path: vim
-      exclude: [plugged, autoload, configs/local.vim]
+      exclude: [plugged, autoload]
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
