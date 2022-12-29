@@ -92,4 +92,9 @@ _pgb() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+# Include local bash if exists
+if [ -f ~/.bashrc_local ]; then
+  source ~/.bashrc_local
+fi
+
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(_pgb)\[\033[00m\] $ "
