@@ -16,6 +16,7 @@ Plug 'leafOfTree/vim-vue-plugin'
 Plug 'tell-k/vim-autopep8'
 Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'zivyangll/git-blame.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " set theme
