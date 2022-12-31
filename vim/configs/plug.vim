@@ -18,6 +18,8 @@ Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'zivyangll/git-blame.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " set theme
