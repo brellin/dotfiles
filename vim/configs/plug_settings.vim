@@ -7,4 +7,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_snazzy'
 let g:airline#extensions#fugitiveline#enabled = 1
 
-so ~/.vim/configs/coc.vim
+" ale
+let g:ale_fixers = {
+\ 'javascript': ['eslint']
+\}

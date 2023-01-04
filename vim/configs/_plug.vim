@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
+Plug 'eslint/eslint'
+Plug 'w0rp/ale'
 call plug#end()
 
 " set theme

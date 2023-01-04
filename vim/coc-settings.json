@@ -1,0 +1,7 @@
+{
+  "eslint.enable": true,
+  "eslint.options": {
+    "plugins": ["prettier"]
+  },
+  "prettier.prettierPath": "~/.prettierrc"
+}

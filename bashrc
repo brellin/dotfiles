@@ -88,6 +88,11 @@ branchup(){
 	git checkout -b $1
 	git push -u origin $1
 }
+puild(){
+  cd "$1" 
+  npm run build
+  cd ..
+}
 _pgb() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
