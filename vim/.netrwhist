@@ -1,6 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/umstead/Apps/apps/matriculation/models'
+let g:netrw_dirhist_1='/home/umstead/Apps/production_server_config/gunicorn'
+let g:netrw_dirhist_0='/home/umstead/Apps/production_server_config'
+let g:netrw_dirhist_9='/home/umstead/Apps/production_server_config/supervisord'
+let g:netrw_dirhist_8='/home/umstead/Apps/production_server_config'
+let g:netrw_dirhist_7='/home/umstead/Apps/production_server_config/nginx'
+let g:netrw_dirhist_6='/home/umstead/Apps/production_server_config'
+let g:netrw_dirhist_5='/home/umstead/Apps/apps_config'
 let g:netrw_dirhist_4='/home/brellin/development/utils/src'
 let g:netrw_dirhist_3='/var/lib/gitea'
-let g:netrw_dirhist_2='/home/brellin/development/utils/src'
-let g:netrw_dirhist_1='/home/brellin/development/utils'

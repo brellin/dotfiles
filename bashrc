@@ -63,8 +63,10 @@ alias la="ls -a"
 alias ll="ls -l"
 alias lal="ls -al"
 alias rc='source ~/.bashrc'
-alias sapps='source /home/umstead/virtualenv/bin/activate'
+alias sapps='source /home/umstead/.virtualenvs/virtualenv/bin/activate'
 alias dapps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/test.toml python3 -m apps'
+alias papps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/prod.toml python3 -m apps'
+alias sell='LESSOPEN="| /usr/bin/source-highlight/src-hilite-lesspipe.sh %s" less -M'
 
 # Functions
 cm() {
@@ -89,9 +91,9 @@ branchup(){
 	git push -u origin $1
 }
 puild(){
-  cd "$1" 
+  pushd "$1" 
   npm run build
-  cd ..
+  popd
 }
 _pgb() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

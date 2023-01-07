@@ -7,6 +7,8 @@ set backspace=indent,eol,start
 syntax on
 set ruler
 set noshowmode
+set splitright
+set splitbelow
 
 " source all configs
 for f in split(glob('~/.vim/configs/*.vim'), '\n')

@@ -12,9 +12,9 @@
     ~/.bashrc: 
       path: bashrc
     ~/.vim:
-      glob: true
       path: vim
-      exclude: [plugged, autoload]
+    ~/.prettierrc:
+      path: prettierrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
