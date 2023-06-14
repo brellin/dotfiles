@@ -11,9 +11,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'leafgarland/typescript-vim'
 Plug 'wakatime/vim-wakatime'
-Plug 'chemzqm/vim-jsx-improve'
-Plug 'leafOfTree/vim-vue-plugin'
-Plug 'tell-k/vim-autopep8'
+Plug 'nvie/vim-flake8'
 Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'zivyangll/git-blame.vim'
 Plug 'vim-airline/vim-airline'
@@ -21,9 +19,4 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
-Plug 'eslint/eslint'
-Plug 'w0rp/ale'
 call plug#end()
-
-" set theme
-colorscheme synthwave

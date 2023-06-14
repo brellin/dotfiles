@@ -65,6 +65,7 @@ alias lal="ls -al"
 alias rc='source ~/.bashrc'
 alias sapps='source /home/umstead/.virtualenvs/virtualenv/bin/activate'
 alias dapps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/test.toml python3 -m apps'
+alias aapps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/atlas.toml python3 -m apps'
 alias papps='APPS_CONFIG_FILE=/home/umstead/Apps/apps_config/prod.toml python3 -m apps'
 alias sell='LESSOPEN="| /usr/bin/source-highlight/src-hilite-lesspipe.sh %s" less -M'
 
@@ -90,13 +91,24 @@ branchup(){
 	git checkout -b $1
 	git push -u origin $1
 }
-puild(){
-  pushd "$1" 
-  npm run build
-  popd
-}
 _pgb() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+build() {
+  local OPTIND d p w flag
+  while getopts "dpw" flag; do
+    case "${flag}" in
+      d) f="dev" ;;
+      p) f="build" ;;
+      w) f="devwatch" ;;
+      ?) echo "script usage: $(basename \$0) [-p] [-d] [-w]" >&2
+         exit 1 ;;
+     esac
+  done
+  pushd "$2"
+  npm run "${f}"
+  trap "" SIGINT
+  popd
 }
 
 # Include local bash if exists
@@ -105,3 +117,4 @@ if [ -f ~/.bashrc_local ]; then
 fi
 
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(_pgb)\[\033[00m\] $ "
+export APPS_CONFIG_FILE="/home/umstead/Apps/apps_config/test.toml"
